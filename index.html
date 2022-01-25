@@ -14,24 +14,67 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <link href="src/styles.css" rel="stylesheet" />
     <title>Croissant</title>
   </head>
   <body>
-    <h1>This website is strictly for Croissants</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <a href="/index.html">Home</a>
-        </div>
-        <div class="col">
-          <a href="src/contact.html"> Contact Me </a>
-        </div>
-        <div class="col">
-          <a href="src/photo.html"> Photo</a>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #e3f2fd"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Croissants</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="src/contact.html"> Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="src/photo.html"> Photo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="/index.html">Home</a></li>
+                <li>
+                  <a class="dropdown-item" href="src/contact.html">
+                    Contact Me</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="src/photo.html"> Photo</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
+    <h1 class="mt-2">This website is strictly for Croissants</h1>
+
     <p>
       There is just so much to say about croissants. There is just so much to
       say about croissants.There is just so much to say about croissants.There
